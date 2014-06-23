@@ -61,16 +61,30 @@
 		-->
 		</script>
 		<style type="text/css">
-		body {
-			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: gray;
-			color: black;
-			text-align: center;
-		}
-		</style>
+      body {
+        background-color: black;
+        color: white;
+        margin: 0;
+      }
+
+      #gameLogo {
+        font-family:'FFF Forward'; 
+        font-size: 1em;
+      }
+
+      @font-face {
+        font-family:"FFF Forward";
+        src:url("/fonts/FFFFORWA.eot?") format("eot"),url("/fonts/FFFFORWA.woff") format("woff"),url("/fonts/FFFFORWA.ttf") format("truetype"),url("/fonts/FFFFORWA.svg#FFFForward") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+    </style>
 	</head>
 	<body>
-		<div class="content">
+  <div id="gameLogo">Vacuum</div>
+
+    <div class="content">
 			<div id="unityPlayer">
 				<div class="missing">
 					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
