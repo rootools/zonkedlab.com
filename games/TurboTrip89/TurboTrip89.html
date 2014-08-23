@@ -77,14 +77,18 @@
       }
 
       #gameLogo {
-        font-family:'FFF Forward'; 
-        font-size: 2em;
-        padding: 1.5%;
+        background-image: url('main_icon.png');
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: -5;
+        top: -80px;
       }
 
       div.content {
         margin: auto;
         width: 800px;
+        margin-top: 140px;
       }
       div.broken,
       div.missing {
@@ -98,7 +102,7 @@
         height: 63px;
         position: relative;
         top: -31px;
-      }
+    }
                                                                                                                                                      div.broken img,
       div.missing img {
         border-width: 0px;
@@ -124,7 +128,7 @@
     </style>
 	</head>
 	<body>
-  <div id="gameLogo">Vacuum</div>
+  <div id="gameLogo"></div>
 
     <div class="content">
 			<div id="unityPlayer">
