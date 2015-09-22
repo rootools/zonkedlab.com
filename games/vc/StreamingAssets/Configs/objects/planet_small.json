@@ -1,0 +1,6 @@
+{
+	"min_size": 0.75,
+    "max_size": 1.25,
+    "radius": 70,
+    "orbit_radius": 200
+}

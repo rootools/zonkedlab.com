@@ -1,0 +1,19 @@
+{
+    "player": {
+        "start_position": {
+            "x": -280,
+            "y": -80
+        }
+    },
+    "planets": [
+        {
+            "type": "small",
+            "config": "objects/planet_small",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+
+    ]
+}
