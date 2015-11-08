@@ -30,8 +30,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 4562333;
-      var PACKAGE_UUID = 'b489068e-3d17-45cc-88ad-498f6d28ceb7';
+      var REMOTE_PACKAGE_SIZE = 6756516;
+      var PACKAGE_UUID = 'e7777c7d-0e21-42c9-bd46-beba072417e4';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -132,13 +132,14 @@ Module['FS_createPath']('/', 'Resources', true, true);
       },
     };
 
-      new DataRequest(0, 57464, 0, 0).open('GET', '/mainData');
-    new DataRequest(57464, 57621, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(57621, 62869, 0, 0).open('GET', '/resources.assets');
-    new DataRequest(62869, 596965, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(596965, 2171169, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(2171169, 4058601, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(4058601, 4562333, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+      new DataRequest(0, 57832, 0, 0).open('GET', '/mainData');
+    new DataRequest(57832, 57989, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(57989, 63237, 0, 0).open('GET', '/resources.assets');
+    new DataRequest(63237, 598581, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(598581, 2785528, 0, 0).open('GET', '/sharedassets0.resource');
+    new DataRequest(2785528, 4360616, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(4360616, 6252632, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(6252632, 6756516, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -152,6 +153,7 @@ Module['FS_createPath']('/', 'Resources', true, true);
           DataRequest.prototype.requests["/methods_pointedto_by_uievents.xml"].onload();
           DataRequest.prototype.requests["/resources.assets"].onload();
           DataRequest.prototype.requests["/sharedassets0.assets"].onload();
+          DataRequest.prototype.requests["/sharedassets0.resource"].onload();
           DataRequest.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
